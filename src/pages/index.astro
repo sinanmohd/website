@@ -35,7 +35,7 @@ const homePath = getRelativeLocaleUrl(locale, "");
   >
     <section id="hero" class="border-border border-b pt-8 pb-6">
       <h1 class="my-4 inline-block text-4xl font-bold sm:my-8 sm:text-5xl">
-        Mingalaba
+        220HELO
       </h1>
       <a
         target="_blank"
@@ -45,7 +45,7 @@ const homePath = getRelativeLocaleUrl(locale, "");
         title="RSS Feed"
       >
         <IconRss
-          width={20}
+          width={25}
           height={20}
           class="stroke-accent scale-125 stroke-3 rtl:-rotate-90"
         />
@@ -53,21 +53,16 @@ const homePath = getRelativeLocaleUrl(locale, "");
       </a>
 
       <p>
-        AstroPaper is a minimal, responsive, accessible and SEO-friendly Astro
-        blog theme. This theme follows best practices and provides accessibility
-        out of the box. Light and dark mode are supported by default. Moreover,
-        additional color schemes can also be configured.
+        I'm a software engineer specializing in platform, cloud-native
+        infrastructure, and systems engineering. Currently based in Kerala. You
+        can find me tinkering with the current thing i find intresting. Feel
+        free to reach out to me at my handles, albeit I might not respond right
+        away.
       </p>
-      <p class="mt-2">
-        Read the blog posts or check{" "}
-        <LinkButton
-          class="hover:text-accent underline decoration-dashed underline-offset-4"
-          href="https://github.com/satnaing/astro-paper#readme"
-        >
-          README
-        </LinkButton>{" "}
-        for more info.
-      </p>
+
+      <blockquote class="mt-4">
+        <p>"To be cringe is to be free."</p>
+      </blockquote>
       {
         socials.length > 0 && (
           <div class="mt-4 flex max-sm:flex-col sm:items-center">
@@ -78,6 +73,20 @@ const homePath = getRelativeLocaleUrl(locale, "");
           </div>
         )
       }
+      <p>
+        You can hire me for 40K USD,{" "}
+        <a
+          target="_blank"
+          href="/public/resume.pdf"
+          class="hover:underline decoration-background"
+        >
+          Get my
+          <span class="bg-accent text-background mx-2 px-2 py-0.5 font-semibold opacity-70">
+            resume
+          </span>
+          from here.
+        </a>
+      </p>
     </section>
 
     {

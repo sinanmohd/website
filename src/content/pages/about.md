@@ -3,35 +3,32 @@ title: "About"
 description: "A bit about me and this blog."
 ---
 
-AstroPaper is a minimal, accessible and SEO-friendly blog theme built with [Astro](https://astro.build/) and [Tailwind CSS](https://tailwindcss.com/).
+Hi, I'm Sinan, a software engineer specializing in platform, cloud-native
+infrastructure, and systems engineering. Currently based in Kerala after
+spending some time up in Leh, I focus on building and maintaining scalable
+systems.
 
-![Astro Paper](@/assets/images/astropaper-og.jpg)
+![Manali k9s](@/assets/images/about-banner.webp)
 
-AstroPaper provides a solid foundation for blogs, or even portfolios\_ with full markdown support, built-in dark mode, and a clean layout that works out-of-the-box.
+This space serves as my personal blog, where i yap about anything i find
+intresting, and document my findings on the current thing.
 
-The blog posts in this theme also serve as guides, docs or example articles\_ making AstroPaper a flexible starting point for your next content-driven site.
+## What I Do
 
-## Features
+My day to day work and technical interests revolve around modern Baremetal
+Infrastructure, Systems engineering, Nix, Linux, and Networking
 
-AstroPaper comes with a set of useful features that make content publishing easy and effective:
+When I'm not building scalable systems, you can usually find me at the gym
+bulding character development with my push pull legs routine, playing a round
+of badminton, or traveling to new places and riding aroud uninhabited terrain
+on a motorcycle, as i like my solitude from time to time
 
-- SEO-friendly
-- Fast performance
-- Light & dark mode
-- Highly customizable
-- Organizable blog posts
-- Responsive & accessible
-- Static search with [PageFind](https://pagefind.app/)
-- Automatic social image generation
+## Get in Touch
 
-and so much more.
+If you find my articles or projects helpful, consider checking out my git repos
+or connecting with me professionally.
 
-## Show your support
+Want to collaborate on an project? Feel free to reach out. I'm always open to
+discussing tech or comparing notes on where to find the best ashwagandha.
 
-If you like [AstroPaper](https://github.com/satnaing/astro-paper), consider giving it a star ⭐️.
-
-Found a bug 🐛 or have an improvement ✨ in mind? Feel free to open an [issue](https://github.com/satnaing/astro-paper/issues), submit a [pull request](https://github.com/satnaing/astro-paper/pulls) or start a [discussion](https://github.com/satnaing/astro-paper/discussions).
-
-If you find this theme helpful, you can also [sponsor me on GitHub](https://github.com/sponsors/satnaing) or [buy me a coffee](https://buymeacoffee.com/satnaing) to show your support — every penny counts.
-
-Kyay zuu! 🙏🏼
+Now fix your posture and go away! 🙏🏼
