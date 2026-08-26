@@ -22,7 +22,7 @@ stdenv.mkDerivation (finalAttrs: {
         "flake.lock"
       ]);
 
-    src = ../.;
+    src = ../../.;
   };
 
   buildPhase = ''

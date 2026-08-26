@@ -27,10 +27,13 @@
       packages = forAllSystems (
         { system, pkgs }:
         {
-          website = pkgs.callPackage ./nix/package.nix {
+          website = pkgs.callPackage ./nix/packages/website.nix {
             inherit version;
           };
-          default = self.packages.${system}.website;
+          website-serve = pkgs.callPackage ./nix/packages/website-serve.nix {
+            website = self.packages.${system}.website;
+          };
+          default = self.packages.${system}.website-serve;
         }
       );
 
