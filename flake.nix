@@ -33,6 +33,10 @@
           website-serve = pkgs.callPackage ./nix/packages/website-serve.nix {
             website = self.packages.${system}.website;
           };
+          container = pkgs.callPackage ./nix/packages/container.nix {
+            website-serve = self.packages.${system}.website-serve;
+          };
+
           default = self.packages.${system}.website-serve;
         }
       );
