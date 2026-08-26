@@ -3,8 +3,8 @@ import { defineAstroPaperConfig } from "./src/types/config";
 export default defineAstroPaperConfig({
   site: {
     url: "https://www.sinanmohd.com/",
-    title: "Sinan Mohd",
-    description: "Sinan's Blog.",
+    title: "Sinan's Blog",
+    description: "Personal blog of a Real Human Being",
     author: "Sinan Mohd",
     profile: "https://www.sinanmohd.com/",
     ogImage: "default-og.jpg",
