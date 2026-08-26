@@ -26,16 +26,14 @@ stdenv.mkDerivation (finalAttrs: {
   };
 
   buildPhase = ''
-    export NODE_OPTIONS="--max_old_space_size=16384"
-    export NUXT_TELEMETRY_DISABLED=1
+    export ASTRO_TELEMETRY_DISABLED="1"
     export npm_config_nodedir=${nodejs}
-
-    pnpm exec nuxt generate
+    pnpm build
   '';
 
   installPhase = ''
     mkdir -p $out/share
-    cp -r .output/public $out/share/www
+    cp -r dist $out/share/www
   '';
 
   nativeBuildInputs = [
@@ -47,7 +45,7 @@ stdenv.mkDerivation (finalAttrs: {
   pnpmDeps = fetchPnpmDeps {
     inherit (finalAttrs) pname version src;
     fetcherVersion = 4;
-    hash = "sha256-DiT2/Mnj2Cwpdk2dd2JddJlgR6wNU8kSKbvu+FX+LPk=";
+    hash = "sha256-2cbN7SD1x3TQ4b3qXI/AS+apdCmMJd933bD4BaH0eAk=";
   };
 
   meta = {

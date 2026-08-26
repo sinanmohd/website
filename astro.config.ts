@@ -62,11 +62,34 @@ export default defineConfig({
     {
       name: "Google Sans Code",
       cssVariable: "--font-google-sans-code",
-      provider: fontProviders.google(),
+      provider: fontProviders.local(),
       fallbacks: ["monospace"],
-      weights: [300, 400, 500, 600, 700],
-      styles: ["normal", "italic"],
-      formats: ["woff", "ttf"],
+      options: {
+        variants: [
+          {
+            style: "normal",
+            weight: "100 900",
+            src: ["./src/assets/fonts/GoogleSansCode-VariableFont_MONO,wght.ttf"],
+          },
+          {
+            style: "italic",
+            weight: "100 900",
+            src: ["./src/assets/fonts/GoogleSansCode-Italic-VariableFont_MONO,wght.ttf"],
+          },
+          // NOTE: needed as og image generator looks for fonts with this
+          // specific weight, and it won't use the variable font above
+          {
+            style: "normal",
+            weight: "400",
+            src: ["./src/assets/fonts/GoogleSansCode-Regular.ttf"],
+          },
+          {
+            style: "normal",
+            weight: "700",
+            src: ["./src/assets/fonts/GoogleSansCode-Bold.ttf"],
+          },
+        ],
+      },
     },
   ],
   env: {
