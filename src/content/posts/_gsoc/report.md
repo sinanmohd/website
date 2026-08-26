@@ -9,9 +9,10 @@ tags:
   - gsoc
   - nix
 description: >
-  We look into implementing constraints such as –max-builds and –max-build-time,
-  which ensure that build operations remain within manageable limits while
-  maximizing throughput.
+  We look into implementing a feasible solution for a combinatorial NP-hard
+  problem, involving nix. Our end goal is to ensure build operations remain
+  within manageable limits, while maximizing throughput on compute constrained
+  environments
 ---
 
 <!-- markdownlint-disable MD013 -->
@@ -22,12 +23,12 @@ description: >
 
 ## Description
 
-In [evanix](https://github.com/sinanmohd/evanix) we explored making the
+Here in [evanix](https://github.com/sinanmohd/evanix) we explored making the
 scheduling of Nix builds more controllable. In particular, we look into
 implementing constraints such as –max-builds and –max-build-time, which ensure
 that build operations remain within manageable limits while maximizing throughput.
 
-Here the scheduling problem is framed as a mixed integer linear programming
+The scheduling problem here is framed as a mixed integer linear programming
 (MILP) problem. The input is a graph G=(V,E), where each vertex v represents a
 Nix package with a cost w(v) and a value p(v). Packages that are classified as
 transitive dependencies—those required solely for other packages—carry a value
@@ -58,13 +59,12 @@ scheduler.
   efficiently, using the
   [HiGHS](https://ergo-code.github.io/HiGHS/dev/interfaces/c_api) solver.
 - Maximize the number of requested packages produced within a specified budget,
-with a maximum constraint of n builds.
+  with a maximum constraint of n builds.
 - Maximize the number of requested packages produced within a specified budget,
   constrained by a maximum time limit of t.
 - Utilize data from Hydra to estimate the build times for derivations.
 - Develop a linear regression model to estimate build times for derivations
-  when such data is unavailable in
-  [Hydra](https://ergo-code.github.io/HiGHS/dev/interfaces/c_api/).
+  when such data is unavailable in [Hydra](https://github.com/NixOS/hydra).
 - Implement unit tests using Meson’s built-in testing framework, and
   integration tests utilizing the NixOS integration testing framework.
 - Implement a pipelined architecture to initiate the building of derivations
@@ -162,7 +162,7 @@ variables form an mxn matrix of `pnames` and each derivation. If an input
 derivation required a particular `pname`, we set the value to 1 and 0 if it did
 not. The dependent variables consist of a vector of build durations.
 
-#### Tests
+## Tests
 
 evanix uses `nix-build` and `nix-eval-jobs`. While the meson built-in testing
 framework facilitates straightforward unit testing, evanix’s integration testing
@@ -192,8 +192,7 @@ perspective.
 Exploring different solutions with my mentor was the most exciting aspect of
 GSoC, and then seeing them come to life after implementation. If you’re aspiring
 to become a GSoC contributor, select an open-source project that interests you,
-**use it**, and identify areas for improvement. Start contributing regardless of
-whether you get selected for GSoC.
+**use it**, and identify areas for improvement, and start contributing.
 
 Huge thanks to Serge for guiding me all the way through. your expertise,
 feedback, encouragement, and enthusiasm were extremely valuable to me. I learned
