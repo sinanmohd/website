@@ -54,20 +54,20 @@ scheduler.
 
 ## What was done
 
-- [x] Utilize mixed-integer programming to approximate the most optimal solution
+- Utilize mixed-integer programming to approximate the most optimal solution
   efficiently, using the
   [HiGHS](https://ergo-code.github.io/HiGHS/dev/interfaces/c_api) solver.
-- [x] Maximize the number of requested packages produced within a specified
-  budget, with a maximum constraint of n builds.
-- [x] Maximize the number of requested packages produced within a specified
-  budget, constrained by a maximum time limit of t.
-- [x] Utilize data from Hydra to estimate the build times for derivations.
-- [x] Develop a linear regression model to estimate build times for derivations
+- Maximize the number of requested packages produced within a specified budget,
+with a maximum constraint of n builds.
+- Maximize the number of requested packages produced within a specified budget,
+  constrained by a maximum time limit of t.
+- Utilize data from Hydra to estimate the build times for derivations.
+- Develop a linear regression model to estimate build times for derivations
   when such data is unavailable in
   [Hydra](https://ergo-code.github.io/HiGHS/dev/interfaces/c_api/).
-- [x] Implement unit tests using Meson’s built-in testing framework, and
+- Implement unit tests using Meson’s built-in testing framework, and
   integration tests utilizing the NixOS integration testing framework.
-- [x] Implement a pipelined architecture to initiate the building of derivations
+- Implement a pipelined architecture to initiate the building of derivations
   immediately following their evaluation.
 
 ## Work for the future
@@ -75,7 +75,6 @@ scheduler.
 - Enhance the linear regression model and conduct additional tests to validate
   its performance and accuracy.
 - Integrate the linear regression model with evanix.
-- **Perform a 1.0 refactor to optimize the overall system.**
 
 ## Milestones
 
@@ -145,7 +144,7 @@ efficiency and robustness, which aligns well with our requirements.
 
 Now that we have a proper solver implemented in evanix, essentially covering the
 `--max-builds` functionality, the next step was to implement `--max-time`. The
-evanix code required very little refactoring for this; most of this phase was
+evanix code required very little refactoring for this. most of this phase was
 spent addressing the data itself. We do not delve into how the estimation
 affects systems with different resources. The first step was gaining access to
 the historical data in Hydra. Huge thanks to the NixOS infrastructure team for
@@ -196,6 +195,6 @@ to become a GSoC contributor, select an open-source project that interests you,
 **use it**, and identify areas for improvement. Start contributing regardless of
 whether you get selected for GSoC.
 
-Huge thanks to Serge for guiding me all the way through; your expertise,
+Huge thanks to Serge for guiding me all the way through. your expertise,
 feedback, encouragement, and enthusiasm were extremely valuable to me. I learned
-lots of real-world skills, and most importantly, I had fun :P.
+lots of real-world skills, and most importantly, I had fun.
