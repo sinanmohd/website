@@ -1,7 +1,7 @@
 ---
 author: Sinan Mohd
 pubDatetime: 2024-09-23T10:00:00Z
-title: "GSoC24: Precedence Constrained Knapsack and package managers"
+title: "Precedence Constrained Knapsack and package managers"
 slug: gsoc24
 featured: false
 draft: false
@@ -21,9 +21,11 @@ description: >
 | Organization | NixOS                                                              |
 | Repo         | [github.com/sinanmohd/evanix](https://github.com/sinanmohd/evanix) |
 
+## Table of contents
+
 ## Description
 
-Here in [evanix](https://github.com/sinanmohd/evanix) we explored making the
+In [evanix](https://github.com/sinanmohd/evanix) we explored making the
 scheduling of Nix builds more controllable. In particular, we look into
 implementing constraints such as –max-builds and –max-build-time, which ensure
 that build operations remain within manageable limits while maximizing throughput.
