@@ -22,7 +22,7 @@ import config from "./astro-paper.config";
 export default defineConfig({
   site: config.site.url,
   redirects: {
-    "/blog/gsoc": "/posts/gsoc",
+    "/blog/gsoc": "/posts/gsoc24",
   },
   integrations: [
     mdx(),
