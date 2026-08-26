@@ -49,7 +49,7 @@ stdenv.mkDerivation (finalAttrs: {
   };
 
   meta = {
-    description = "Sinan's website.";
+    description = "Sinan's Blog.";
     homepage = "https://www.sinanmohd.com";
     platforms = lib.platforms.unix;
     license = lib.licenses.agpl3Plus;

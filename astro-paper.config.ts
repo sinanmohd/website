@@ -4,7 +4,7 @@ export default defineAstroPaperConfig({
   site: {
     url: "https://www.sinanmohd.com/",
     title: "Sinan Mohd",
-    description: "Sinan's blog.",
+    description: "Sinan's Blog.",
     author: "Sinan Mohd",
     profile: "https://www.sinanmohd.com/",
     ogImage: "default-og.jpg",
@@ -23,8 +23,8 @@ export default defineAstroPaperConfig({
     showArchives: true,
     showBackButton: true,
     editPost: {
-      enabled: true,
-      url: "https://github.com/sinanmohd/website/edit/master/",
+      enabled: false,
+      // url: "https://github.com/sinanmohd/website/edit/master/",
     },
     search: "pagefind",
   },
