@@ -8,7 +8,7 @@ infrastructure, and systems engineering. Currently based in Kerala after
 spending some time up in Leh, I focus on building and maintaining scalable
 systems.
 
-![Manali k9s](@/assets/images/about-banner.webp)
+![Banner](@/assets/images/about-banner.webp)
 
 This space serves as my personal blog, where i yap about anything i find
 intresting, and document my findings on the current thing.
