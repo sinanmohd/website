@@ -9,10 +9,10 @@ tags:
   - gsoc
   - nix
 description: >
-  We look into implementing a feasible solution for a combinatorial NP-hard
-  problem, involving nix. Our end goal is to ensure build operations remain
-  within manageable limits, while maximizing throughput on compute constrained
-  environments
+  We explore a combinatorial NP-hard problem involving nix, and look into
+  implementing a feasible solution . Our end goal is to ensure build operations
+  remain within manageable limits, while maximizing throughput on compute
+  constrained environments
 ---
 
 <!-- markdownlint-disable MD013 -->
