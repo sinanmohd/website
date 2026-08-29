@@ -10,7 +10,7 @@ tags:
   - nix
 description: >
   We explore a combinatorial NP-hard problem involving nix, and look into
-  implementing a feasible solution . Our end goal is to ensure build operations
+  implementing a feasible solution. Our end goal is to ensure build operations
   remain within manageable limits, while maximizing throughput on compute
   constrained environments
 ---
