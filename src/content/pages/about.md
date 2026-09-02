@@ -4,9 +4,8 @@ description: "A bit about me and this blog."
 ---
 
 Hi, I'm Sinan, a software engineer specializing in platform, cloud-native
-infrastructure, and systems engineering. Currently based in Kerala after
-spending some time up in Leh, I focus on building and maintaining scalable
-systems.
+infrastructure, and systems engineering. Currently based in Kerala, albeit
+I like to travel around. focusing on building and maintaining scalable systems.
 
 ![Banner](@/assets/images/about-banner.webp)
 
