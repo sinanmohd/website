@@ -14,9 +14,6 @@ intresting, and document my findings on the current thing.
 
 ## What I Do
 
-My day to day work and technical interests revolve around modern Baremetal
-Infrastructure, Systems engineering, Nix, Linux, and Networking
-
 When I'm not building scalable systems, you can usually find me at the gym
 bulding character development with my push pull legs routine, playing a round
 of badminton, or traveling to new places and riding aroud uninhabited terrain
