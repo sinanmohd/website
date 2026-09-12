@@ -7,6 +7,18 @@ Hi, I'm Sinan, a software engineer specializing in platform, cloud-native
 infrastructure, and systems engineering. Currently based in Kerala, albeit
 I like to travel around. focusing on building and maintaining scalable systems.
 
+<!-- markdownlint-disable MD033 -->
+<p>
+  <a
+    href="/resume.pdf"
+    class="hover:underline decoration-background"
+  >
+    Get my
+    <span class="bg-accent text-background p-1 font-semibold opacity-70">resume</span>
+    from here.
+  </a>
+</p>
+
 ![Banner](@/assets/images/about-banner.webp)
 
 This space serves as my personal blog, where i yap about anything i find
