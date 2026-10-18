@@ -17,6 +17,7 @@ import {
   transformerNotationWordHighlight,
 } from "@shikijs/transformers";
 import { transformerFileName } from "./src/utils/transformers/fileName";
+import typst from "./src/integrations/typst";
 import config from "./astro-paper.config";
 
 export default defineConfig({
@@ -26,6 +27,7 @@ export default defineConfig({
   },
   integrations: [
     mdx(),
+    typst({ input: "src/cv/cv.typ", output: "resume.pdf" }),
     sitemap({
       filter: page =>
         config.features?.showArchives !== false || !page.endsWith("/archives/"),
@@ -72,12 +74,16 @@ export default defineConfig({
           {
             style: "normal",
             weight: "100 900",
-            src: ["./src/assets/fonts/GoogleSansCode-VariableFont_MONO,wght.ttf"],
+            src: [
+              "./src/assets/fonts/GoogleSansCode-VariableFont_MONO,wght.ttf",
+            ],
           },
           {
             style: "italic",
             weight: "100 900",
-            src: ["./src/assets/fonts/GoogleSansCode-Italic-VariableFont_MONO,wght.ttf"],
+            src: [
+              "./src/assets/fonts/GoogleSansCode-Italic-VariableFont_MONO,wght.ttf",
+            ],
           },
           // NOTE: needed as og image generator looks for fonts with this
           // specific weight, and it won't use the variable font above

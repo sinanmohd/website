@@ -5,11 +5,18 @@
 Powered by AstroPaper. AstroPaper is a minimal, responsive, accessible and
 SEO-friendly Astro blog theme. Check out the [docs here](https://satnaing.dev/blog).
 
+## CV
+
+The CV lives in `src/cv/cv.typ` and is compiled with [Typst](https://typst.app)
+into `/resume.pdf` at build time (see `src/integrations/typst.ts`). `typst` must
+be on `$PATH`; the nix dev shell provides it along with the template package.
+
 ## Commands
 
 All commands are run from the root of the project
 
 <!-- markdownlint-disable MD013 -->
+
 | Command          | Action                                                                                                                           |
 | :--------------- | :------------------------------------------------------------------------------------------------------------------------------- |
 | `nix develop`    | Enter nix dev shell                                                                                                              |

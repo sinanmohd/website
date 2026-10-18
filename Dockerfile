@@ -5,6 +5,11 @@ WORKDIR /app
 # Install pnpm
 RUN corepack enable && corepack prepare pnpm@latest --activate
 
+# Install typst (compiles src/cv/cv.typ into resume.pdf during the build)
+RUN arch="$(uname -m)" \
+  && curl -fsSL "https://github.com/typst/typst/releases/latest/download/typst-${arch}-unknown-linux-musl.tar.xz" \
+  | tar -xJ --strip-components=1 -C /usr/local/bin "typst-${arch}-unknown-linux-musl/typst"
+
 COPY package.json pnpm-lock.yaml ./
 RUN pnpm install --frozen-lockfile
 

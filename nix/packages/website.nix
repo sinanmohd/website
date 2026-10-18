@@ -6,6 +6,7 @@
   version,
   pnpmConfigHook,
   fetchPnpmDeps,
+  typst,
 }:
 
 stdenv.mkDerivation (finalAttrs: {
@@ -40,6 +41,7 @@ stdenv.mkDerivation (finalAttrs: {
     pnpmConfigHook
     pnpm
     nodejs
+    (typst.withPackages (p: [ p.simple-technical-resume ]))
   ];
 
   pnpmDeps = fetchPnpmDeps {
