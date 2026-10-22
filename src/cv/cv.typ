@@ -36,7 +36,7 @@
   )[
     - Wrote K8s operator to optimize cold start time, 40-400% performance gains on production LLM workloads
     - Implemented fault tolerant, high availability databases, storage solutions, and automated backup systems
-    - Built various backend services, internal tools, features, and the primary user-facing administrative TUI
+    - Built various backend microservices, tools, features, and the primary user-facing administrative TUI
     - Identified and remediated vulnerabilities, code reviews, ensure project follows industry best practices
     - Integrated application and cluster telemetry/monitoring via OpenTelemetry, and automation pipelines
     - Led complete Infrastructure as Code (IaC) migration (BareMetal, NixOS, K8s, VXLAN, DSR, BGP)
@@ -60,9 +60,9 @@
     datetime(year: 2024, month: 5, day: 1),
     datetime(year: 2024, month: 9, day: 1),
   )[
-    - Research and Build C software for Precedence Constrained Knapsack (PCKP, scheduling optimization)
-    - Profile and optimize software to meet production performance requirements (pthreads, custom hash table)
-    - Write tests using Meson (Unit Tests, C) and NixOS testing framework (Integration Tests, Nix)
+    - Researched and built C software for Precedence Constrained Knapsack (PCKP, scheduling optimization)
+    - Profiled and optimized software to meet production performance requirements (pthreads, custom hash table)
+    - Wrote tests using Meson (Unit Tests, C) and NixOS testing framework (Integration Tests, Nix)
   ]
 
   #work-heading(
@@ -72,7 +72,7 @@
     datetime(year: 2023, month: 11, day: 1),
     "Present",
   )[
-    - Fixed various bugs in NixOS networking stack (DNS, Interfaces)
+    - Troubleshoot and resolve bugs in the NixOS networking stack (DNS, Interfaces)
     - Write and maintain tests, packages, and NixOS Modules
   ]
 ]
@@ -101,7 +101,7 @@
     stack: "Lua",
     project-url: "https://git.sinanmohd.com/mpvsub",
   )[
-    - Automagic subtitles for mpv, purpose made fuzzy matching algorithm
+    - Automated subtitles for mpv, purpose made fuzzy matching algorithm
     - No API keys, or accounts needed, native implementation with minimal dependencies
   ]
 
