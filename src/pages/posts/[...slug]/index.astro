@@ -314,6 +314,7 @@ const ogImage = ogImageUrl
       image.alt = "";
       image.className =
         "max-h-[90dvh] max-w-[90dvw] cursor-default object-contain";
+      if (trigger?.closest("figure")) image.classList.add("lightbox-figure");
 
       overlay.append(closeButton, image);
       overlay.addEventListener("click", e => {

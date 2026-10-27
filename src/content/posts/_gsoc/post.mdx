@@ -15,7 +15,6 @@ description: >
   constrained environments
 ---
 
-<!-- markdownlint-disable MD013 -->
 | Mentor       | Serge                                                              |
 | ------------ | -------------------------------------------------------------------|
 | Organization | NixOS                                                              |
@@ -88,7 +87,11 @@ with the least cost in each step to maximize throughput. The SJF solver can
 function perfectly if the requested jobs do not share dependencies. However, it
 falls apart when they do. An example is given in Figure 1.
 
-![Figure 1: Example Dependency Directed Acyclic Graph](assets/5_packages.svg)
+<figure>
+![Example dependency directed acyclic graph](assets/5_packages.svg)
+
+<figcaption>Figure 1: Example Dependency Directed Acyclic Graph</figcaption>
+</figure>
 
 In the above DAG, if we’re given enough resources to build 3 packages, SJF
 would only be able to build 1 (C), instead of 2 if we were to choose A, B, Q.
@@ -110,7 +113,11 @@ all packages that cost more resources than we can allocate, then we select the
 package with the highest conformity score. If conformity is the same for some
 packages then we select the package with the least cost.
 
-![Figure 2: Example Dependency Directed Acyclic Graph](assets/12_packages.svg)
+<figure>
+![Example dependency directed acyclic graph](assets/12_packages.svg)
+
+<figcaption>Figure 2: Example Dependency Directed Acyclic Graph</figcaption>
+</figure>
 
 Higher the conformity, more the package will help other packages in our DAG,
 this gives packages in a cluster higher chance to be selected than isolated

@@ -44,7 +44,7 @@
     }
 
     img {
-      @apply border-border mx-auto border;
+      @apply mx-auto;
     }
 
     img[role="button"] {
@@ -56,7 +56,7 @@
     }
 
     figcaption {
-      @apply opacity-75;
+      @apply text-center opacity-75;
     }
 
     table {
@@ -108,6 +108,12 @@
     pre {
       @apply focus-visible:outline-accent focus-visible:border-transparent focus-visible:outline-2 focus-visible:outline-dashed;
     }
+  }
+
+  /* ===== Figure images in posts ===== */
+  /* Figures (charts, diagrams) are drawn for light mode, an <img> can't see data-theme */
+  html[data-theme="dark"] :is(.app-prose figure img, .lightbox-figure) {
+    @apply invert hue-rotate-180;
   }
 
   /* ===== Code Blocks & Syntax Highlighting ===== */
